@@ -162,7 +162,7 @@ void delete(NODE* n, NODE* target)
 }
 ```
 
-[전체 코드 - C]()
+[전체 코드 - C](https://github.com/algorithm-011/data-structure/blob/master/example/week1/single_linked_list.c)
 
 ## Doubly Linked List
 
@@ -285,7 +285,7 @@ void delete(NODE* n, NODE* target)
 }
 ```
 
-[전체 코드 - C]()
+[전체 코드 - C](https://github.com/algorithm-011/data-structure/blob/master/example/week1/doubly_linked_list.c)
 
 # Linked List vs. Array
 
