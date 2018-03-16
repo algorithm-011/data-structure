@@ -22,4 +22,4 @@
 데이터 탐색: O(n)
 
 
-![단방향 링크드리스트](./linkedlist.png)
+![단방향 링크드리스트](./linked_list.png)
