@@ -12,5 +12,5 @@
 ## WEEK2 (18.3.19 ~ 18.3.25)
 
 - [x] Binary Tree
-- [ ] Heap
+- [x] Heap
 - [ ] Priority Queue
