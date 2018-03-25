@@ -15,9 +15,6 @@
 
 자식이 모두 2개씩인 꽉 찬 트리를 `완전 이진 트리`라고 한다.
 
-![complete binary tree](https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Complete_binary.svg/800px-Complete_binary.svg.png)
-
-
 ### `완전 이진 트리`에서..
 
 #### Root Node = Level 1인 경우..
