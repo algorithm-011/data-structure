@@ -1,6 +1,6 @@
 # punkyoon
 
-## WEKK1 (18.3.12 ~ 18.3.18)
+## WEEK1 (18.3.12 ~ 18.3.18)
 
 - [x] Map
 - [x] Set
@@ -8,3 +8,9 @@
 - [x] Vector
 - [x] List
 - [x] Tuple
+
+## WEEK2 (18.3.19 ~ 18.3.25)
+
+- [x] Binary Tree
+- [ ] Heap
+- [ ] Priority Queue
