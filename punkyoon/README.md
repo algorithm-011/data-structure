@@ -13,4 +13,4 @@
 
 - [x] Binary Tree
 - [x] Heap
-- [ ] Priority Queue
+- [x] Priority Queue

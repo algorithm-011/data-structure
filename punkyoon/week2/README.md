@@ -105,8 +105,11 @@ void postorder(NODE *node)
 ![binary tree](https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Sorted_binary_tree.svg/250px-Sorted_binary_tree.svg.png)
 
 **1. Preorder:** F, B, A, D, C, E, G, I, H
+
 **2. Inorder:** A, B, C, D, E, F, G, H, I
+
 **3. Postorder:** A, C, E, D, B, H, I, G, F
+
 **4. Level-order:** F, B, G, A, D, I, C, E, H
 
 ## 구현
@@ -358,11 +361,6 @@ int main(void)
 
 # Priority Queue
 
-## 참고 자료
-
-1.
-2.
-
 ## 내용
 
 `우선 순위 큐`는 자료의 집합이 있을 때, 각 자료들은 각각의 순위가 있다는 개념을 가진다. 각 요소에 우선 순위를 매겨서 반드시 가장 큰 우선 순위를 가진 요소를 꺼내는 것이다.
@@ -375,3 +373,6 @@ int main(void)
 
 배열과 Linked List를 활용한 구현은 데이터의 위치를 재조정 해주거나 탐색에 시간이 많이 들어가기 때문에 Heap을 이용한 구현이 일반적이다.
 
+하지만, Heap 또한 트리 기반 자료구조이기 때문에 배열 혹은 Linked List로 구현해야한다. 새로운 노드를 Heap의 마지막 위치에 추가하기 위해서는 배열을 기반으로 구현하는 것이 쉽다.
+
+> 즉, Heap은 우선순위 큐의 일종이다.
