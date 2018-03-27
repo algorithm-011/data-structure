@@ -26,7 +26,7 @@
 
 - 선형(Linear) 자료구조
   - [스택(Stack)](./week3/stack/): LIFO(Last-In First-Out) 구조. 데이터를 스택에 넣었다가 빼면 역순이 됨.
-  - 큐(Queue): FIFO(First-In First-Out) 구조.
+  - [큐(Queue)](./week3/queue/): FIFO(First-In First-Out) 구조.
     - 원형 큐(Circular Queue): 선형 큐(Linear Queue)에서 Front가 점차 뒤로 가면서 앞의 메모리를 제대로 사용 못하는 문제점을 해결한 자료구조.
   - 덱(Deque): 양쪽에서 넣고 뺄 수 있는 자료구조. 스택과 큐가 합쳐진 형태.
 
