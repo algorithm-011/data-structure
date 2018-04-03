@@ -59,7 +59,9 @@ class BaseDeque:
 
 class LinkedDeque(BaseDeque):
     def __init__(self):
-        self.size = self.head = self.tail = 0
+        self.size = 0
+        self.head = None
+        self.tail = None
 
     def push(self, data):
         new_node = Node(data)
@@ -67,6 +69,7 @@ class LinkedDeque(BaseDeque):
         if self.is_empty():
             self.head = new_node
         else:
+            new_node.prev = self.tail
             self.tail.next = new_node
 
         self.tail = new_node
@@ -80,6 +83,7 @@ class LinkedDeque(BaseDeque):
         if self.is_empty():
             self.tail = new_node
         else:
+            self.head.prev = new_node
             new_node.next = self.head
 
         self.head = new_node
@@ -91,7 +95,11 @@ class LinkedDeque(BaseDeque):
             raise Exception('Deque is empty!')
         
         data = self.tail.data
-        self.tail.prev.next = None
+        self.tail = self.tail.prev
+        self.tail.next = None
+
+        self.size -= 1
+
         return data
 
     def pop_left(self):
@@ -99,32 +107,49 @@ class LinkedDeque(BaseDeque):
             raise Exception('Deque is empty!')
         
         data = self.head.data
-        self.head.next.prev = None
+        self.head = self.head.next
+        self.head.prev = None
+
+        self.size -= 1
+
         return data
 
     def remove(self, data):
         if self.is_empty():
             raise Exception('Deque is empty!')
 
-        current = self.head
-        while current.data == data:
+        if self.head.data == data:
+            self.head = self.head.next
+            self.head.prev = None
+            self.size -= 1
+            return
+
+        elif self.tail.data == data:
+            self.tail = self.tail.prev
+            self.tail.next = None
+            self.size -= 1
+            return
+
+        current = self.head.next
+
+        while current.data != data:
             current = current.next
-        
-        current.prev.next = current.next
-        current.next.prev = current.prev
-        del current
+
+        if current.data is not None:
+            current.prev.next = current.next
+            current.next.prev = current.prev
+            self.size -= 1
+        else:
+            raise Exception('cannot search')
 
     def clear(self):
         if self.is_empty():
             raise Exception('Deque is empty!')
 
-        current = self.head
-        next_node = current.next
-        del current
-        while next_node:
-            current = next_node
-            next_node = next_node.next
-            del current
+        self.head = None
+        self.tail = None
+        
+        self.size = 0
 
     def is_empty(self):
         return self.size == 0
@@ -135,4 +160,4 @@ class LinkedDeque(BaseDeque):
 
         while current.next:
             current = current.next
-            print(current.data)
+            print(current.data, end=" -> ")

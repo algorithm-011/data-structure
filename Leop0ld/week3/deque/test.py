@@ -53,12 +53,4 @@ class TestLinkedDeque(unittest.TestCase):
 
 
 if __name__ == '__main__':
-    # unittest.main()
-    deque = LinkedDeque()
-    deque.push(2)
-    deque.push_left(1)
-    deque.push(3)
-    deque.show_all()
-
-    deque.pop()
-    deque.show_all()
+    unittest.main()
