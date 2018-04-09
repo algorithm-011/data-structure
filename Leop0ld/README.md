@@ -28,12 +28,13 @@
   - [스택(Stack)](./week2/stack/): LIFO(Last-In First-Out) 구조. 데이터를 스택에 넣었다가 빼면 역순이 됨.
   - [큐(Queue)](./week2/queue/): FIFO(First-In First-Out) 구조.
     - 원형 큐(Circular Queue): 선형 큐(Linear Queue)에서 Front가 점차 뒤로 가면서 앞의 메모리를 제대로 사용 못하는 문제점을 해결한 자료구조.
+    - [우선순위 큐(Priority Queue)](./week5/priority_queue/): 일반 선형 큐와 비슷하나 각 원소들이 우선순위를 가지고 있음.
   - [덱(Deque)](./week3/deque/): 양쪽에서 넣고 뺄 수 있는 자료구조. 스택과 큐가 합쳐진 형태.
 
 - 비선형(Non-Linear) 자료구조
   - [트리(Tree)](./week4/tree/): 부모와 자식 노드로 이뤄진 자료구조. 자식 노드도 재귀적으로 트리 형태를 갖게 됨.
     - 이진 트리(Binary Tree): 자식 노드를 2개만 가지는 형태의 트리.
-    - 힙(Heap): 부모가 자식 노드보다 작은 혹은 큰 규칙을 갖는 이진 트리.
+    - [힙(Heap)](./week5/heap/): 부모가 자식 노드보다 작은 혹은 큰 규칙을 갖는 이진 트리.
   - 그래프(Graph): 트리 구조와 비슷한 형태이나, 순환 구조를 가짐. 한 노드에서 시작해 다시 그 노드로 돌아올 수 있는 구조.
 
 
