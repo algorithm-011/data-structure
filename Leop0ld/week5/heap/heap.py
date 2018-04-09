@@ -57,8 +57,15 @@ class MinHeap:
         self.min_heapify(1)
     
     def show_all(self):
-        for i in self.queue[1:]:
-            print(i, end=', ')
+        # 더 이쁘게 출력은 안되나... ㅠㅠ
+        height = 1
+        for idx, val in enumerate(self.queue[1:]):
+            if idx + 1 == 2 ** height:
+                print('')
+                height += 1
+
+            print(val, end=', ')
+
         print(' ')
 
 
@@ -68,7 +75,3 @@ if __name__ == '__main__':
     for _ in range(10):
         min_heap.insert(random.randint(1, 50))
     min_heap.show_all()
-
-    for _ in range(10):
-        min_heap.delete()
-        min_heap.show_all()
